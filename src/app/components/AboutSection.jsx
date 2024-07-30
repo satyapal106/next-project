@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AboutSection.css';
 
@@ -102,43 +103,51 @@ const AboutSection = () => {
             </ul>
             <div className="tab-content mt-3" id="myTabContent">
               <div className={`tab-pane fade ${activeTab === 'developers' ? 'show active' : ''}`} id="developers" role="tabpanel" aria-labelledby="developers-tab">
-                <p>Developer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Developer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className={`tab-pane fade ${activeTab === 'partners' ? 'show active' : ''}`} id="partners" role="tabpanel" aria-labelledby="partners-tab">
-                <p>Channel Partner Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Channel Partner Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className={`tab-pane fade ${activeTab === 'corporates' ? 'show active' : ''}`} id="corporates" role="tabpanel" aria-labelledby="corporates-tab">
-                <p>Corporates Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Corporates Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className={`tab-pane fade ${activeTab === 'consumers' ? 'show active' : ''}`} id="consumers" role="tabpanel" aria-labelledby="consumers-tab">
-                <p>Consumers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Consumers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-12">
-            <img
-              src="https://anarock.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstart-image.6f61ffa6.png&w=640&q=75"
+            <Image
+              src="/assets/images/about/about1.webp"
               alt="Developer"
               id="developer-img"
               className={`img-fluid ${getImageId() === 'developer-img' ? '' : 'd-none'}`}
+              width={426} 
+              height={540} 
             />
-            <img
-              src="https://anarock.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchannelpartner.73537ff6.png&w=640&q=75"
+            <Image
+              src="/assets/images/about/about2.webp"
               alt="Partner"
               id="partner-img"
               className={`img-fluid ${getImageId() === 'partner-img' ? '' : 'd-none'}`}
+              width={426} 
+              height={540} 
             />
-            <img
-              src="https://anarock.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcorporate.5a441703.png&w=640&q=75"
+            <Image
+              src="/assets/images/about/about3.webp"
               alt="Corporate"
               id="corporate-img"
               className={`img-fluid ${getImageId() === 'corporate-img' ? '' : 'd-none'}`}
+              width={426} 
+              height={540} 
             />
-            <img
-              src="https://anarock.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer.c16de992.png&w=640&q=75"
+            <Image
+              src="/assets/images/about/about4.webp"
               alt="Consumer"
               id="consumer-img"
               className={`img-fluid ${getImageId() === 'consumer-img' ? '' : 'd-none'}`}
+              width={426} 
+              height={540} 
             />
           </div>
         </div>
