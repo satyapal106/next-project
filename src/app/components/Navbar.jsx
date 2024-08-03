@@ -53,18 +53,13 @@ export const Navbar = () => {
               {/* Left Navigation Menu */}
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link href="#" className="nav-link active cursor-scale" aria-current="page">
-                    Home
+                  <Link href="#" className="nav-link cursor-scale">
+                      Service
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link href="#" className="nav-link cursor-scale">
-                    Project
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="#" className="nav-link cursor-scale">
-                    Services
+                     Project
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -76,14 +71,14 @@ export const Navbar = () => {
 
               {/* Centered Logo for Desktop View */}
               <Link href="#" className="navbar-brand mx-auto d-none d-lg-block cursor-scale">
-                <Image src="/assets/images/logo/logo.png" width={200} height={70} alt="Logo" />
+                <Image src="/assets/images/logo/logo.png" width={150} height={60} className="nav-logo" alt="Logo" />
               </Link>
 
               {/* Right Navigation Menu */}
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link href="#" className="nav-link cursor-scale">
-                    About
+                    About Us
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -93,14 +88,14 @@ export const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link href="#" className="nav-link cursor-scale">
-                    Career
+                    Careers
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link href="#" className="nav-link cursor-scale">
                     Contact
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

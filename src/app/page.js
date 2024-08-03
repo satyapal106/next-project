@@ -20,11 +20,11 @@ export default function Home() {
       <Navbar/>
       <ParallaxSlider/>
       <AboutSection/>
-      <FeaturedService/>
       <ServiceSlider/>
-      <CounterSection/>
-      <Testimonials/>
+      <FeaturedService/>
       <BlogSlider/>
+      <Testimonials/>
+      <CounterSection/>
       <LastContent/>
       <Footer/>
     </>

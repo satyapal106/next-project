@@ -116,8 +116,12 @@ const FeatureService = () => {
                         </div>
                       </div>
                       <div className="card-info">
-                        <p className="text-title">{property.title}</p>
-                        <p className="text-body">{property.description}</p>
+                        <h2 className="text-title">{property.title}</h2>
+                        {/* <p className="text-body">{property.description}</p> */}
+                        <ul>
+                          <li><i class="fa fa-map-marker" aria-hidden="true"></i> Lucknow</li>
+                          <li><i class="fa fa-building" aria-hidden="true"></i> 2BHK, 3BHK, 4BHK</li>
+                        </ul>
                       </div>
                       <div className="card-footer">
                         <button type="button" className="btn btn-info">
